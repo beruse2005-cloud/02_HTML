@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <!-- 브라우저는 기본적으로 표에 테두리가 표현이 안됨 -->
     <style>
-        table{
+        table {
             border-collapse: collapse;
+            margin-bottom: 24px;
         }
+
         th,
         td {
             border: 1px solid #94a3b8;
@@ -39,8 +42,9 @@
 </table>
 
 
-<h2>colspan : 영 병합 (옆으로 합치기)</h2>
+<h2>colspan : 열 병합 (옆으로 합치기)</h2>
 <table>
+    <tbody>
     <tr>
         <td colspan="2">열 병합</td>
         <td>얘는따로</td>
@@ -50,10 +54,12 @@
         <td>내용3</td>
         <td>내용4</td>
     </tr>
+    </tbody>
 </table>
 
 <h2>rowspan : 행 병합 (아래로 합치기)</h2>
 <table>
+    <tbody>
     <tr>
         <td>내용1</td>
         <td>내용2</td>
@@ -66,9 +72,10 @@
     </tr>
     <tr>
         <td>내용7</td>
-<!--        <td>내용8</td>-->
         <td>내용9</td>
     </tr>
+    </tbody>
 </table>
+
 </body>
 </html>
